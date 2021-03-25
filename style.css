@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.float-lt{
+  float: left;
+}
+
+.text-color-white{
+  color: white;
+}
+
+.text-color-gray{
+  color:#7D7D7D ;
+}
+
+
+/* nav laterale */
+.nav-laterale{
+  width: 230px;
+  height: calc(100vh - 90px);
+  background-color: black;
+}
+/* / nav laterale */
+
+/* main */ 
+
+.box-1{
+  width: calc(100% - 230px);
+  height: calc(100vh - 90px);
+  background-color: #141922;
+  overflow-y: auto;
+}
+/* nav-fix */
+.nav-btn{
+  position: fixed;
+  width: calc(100% - 230px);
+  height: 90px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.nav-btn button{
+  margin-right: 20px;
+  height: 50%;
+  background: none;
+  color: #FFF;
+  padding: 0 20px;
+  border-radius: 50px;
+  border-color: #fff;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+/* select */
+
+.select{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: cornflowerblue;
+  padding: 10px;
+  margin-top: 90px;
+}
+
+.box-1 .select ul{
+  list-style: none;
+  display: flex;
+}
+.box-1 .select ul li{
+  position: relative;
+  padding: 10px;
+}
+
+.linea{
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 25px);
+  height: 1px;
+  width: 50px;
+  background-color: #adff2f;
+  display: none;
+}
+
+.box-1 .select ul li:active .linea{
+  display: block;
+} 
+
+.box-1 .select ul li a{
+  text-decoration: none;
+  color: #7d7f84
+}
+
+.scopri{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  background-color: #282828;
+}
+.footer-left, .footer-right, .footer-center{
+  display: flex;
+  flex-shrink: 0;
+}
+
+footer .footer-left .titolo-brano{
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+footer .footer-left .icon,
+footer .footer-center .icon,
+footer .footer-right .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* color: #878787; */
+  height: 100%;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+footer .footer-left .icon .cartella{
+  margin-left: 15px;
+}
+
+.icon img {
+  width: 75%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+.min_album{
+  width: 60px;
+  /* height: 25px; */
+  margin: 0 5px;
+
+}
+
+footer .footer-center .icon,
+footer .footer-right .icon{
+  margin-right: 10px;
+}
