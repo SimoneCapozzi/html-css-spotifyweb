@@ -51,6 +51,8 @@ main .nav_laterale .nav_laterale-top{
   display: none;
 }
 
+/* lista-home */
+
 .nav_laterale-top .list-home{
   width: 100%;
   color: #7D7D7D;
@@ -86,6 +88,10 @@ main .nav_laterale .nav_laterale-top{
   height: 26px;
 }
 
+/* /lista-home */
+
+/* lista-playlist */
+
 .h5-nav-laterale{
   margin-left: 22px;
   margin-top: 15px;
@@ -117,6 +123,9 @@ main .nav_laterale .nav_laterale-top .playlist .nome-playlist{
   overflow-y: auto;
 }
 
+.nome-playlist ul li span:hover{
+  color: white;
+}
 
 
 .nav-laterale-bottom{
@@ -124,6 +133,8 @@ main .nav_laterale .nav_laterale-top .playlist .nome-playlist{
   height: 80px;
   background-color: teal;
 }
+/* lista-playlist */
+
 /* / nav laterale */
 
 /* main */ 
