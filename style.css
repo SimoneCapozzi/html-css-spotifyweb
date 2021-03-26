@@ -23,12 +23,106 @@
   color:#7D7D7D ;
 }
 
+.padding-lt5{
+  padding: 0 5px;
+}
+
 
 /* nav laterale */
-.nav-laterale{
+.nav_laterale{
   width: 230px;
   height: calc(100vh - 90px);
   background-color: black;
+}
+
+main .nav_laterale .nav_laterale-top{
+  width: 100%;
+  height: calc(100% - 80px);
+}
+
+
+.nav_laterale .nav_laterale-top .nav-logo{
+  width: 75%;
+  height: 90px;
+  padding: 20px;
+}
+
+.nav-logo-mobile{
+  display: none;
+}
+
+.nav_laterale-top .list-home{
+  width: 100%;
+  color: #7D7D7D;
+}
+
+.list-home ul li{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px 20px;
+  font-weight: 400;
+}
+
+.list-home ul li span:hover{
+  color: white;
+}
+
+.list-home ul li span{
+  position: relative;
+}
+
+.linea-home{
+  position: absolute;
+  right: 0;
+  left: calc(50% - 25px);
+  height: 1px;
+  width: 50px;
+  background-color: #adff2f;
+  display: none;
+}
+
+.list-home img{
+  height: 26px;
+}
+
+.h5-nav-laterale{
+  margin-left: 22px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.crea-P{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color:#A3A3A3 ;
+  margin-left: 5px ;
+  line-height: 40px;
+  text-align: center;
+}
+
+.simbolo-quadrato{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.h5-crea-playlist{
+  display: inline;
+  margin-left: 20px;
+}
+
+main .nav_laterale .nav_laterale-top .playlist .nome-playlist{
+  height: calc(100vh - 480px);
+  overflow-y: auto;
+}
+
+
+
+.nav-laterale-bottom{
+  width: 100%;
+  height: 80px;
+  background-color: teal;
 }
 /* / nav laterale */
 
@@ -68,7 +162,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: cornflowerblue;
   padding: 10px;
   margin-top: 90px;
 }
@@ -157,4 +250,37 @@ footer .footer-left .icon .cartella{
 footer .footer-center .icon,
 footer .footer-right .icon{
   margin-right: 10px;
+}
+/* /footer */
+
+/* media query */
+
+
+@media (max-width: 600px) {
+
+main .nav_laterale .nav_laterale-top .nav-logo-mobile{
+  display:block;
+}
+main .nav_laterale .nav_laterale-top .nav-logo{
+  display: none;
+}
+main .nav_laterale {
+  width: 50px;
+}
+main .box-1, main .box-1 .nav-btn {
+  width: calc(100% - 50px);
+}
+
+.list-home ul li {
+  padding: 5px 11px;
+}
+
+.list-home ul li span{
+  display: none;
+}
+
+main .nav_laterale .nav_laterale-top .playlist{
+  display: none;
+}
+
 }
